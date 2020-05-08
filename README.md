@@ -19,3 +19,10 @@ next "free cell"
 $2
 10
 ```
+
+**Install:**
+```
+mkdir build
+cd build && cmake ..
+make
+```
