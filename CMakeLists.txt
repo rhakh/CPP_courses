@@ -22,3 +22,6 @@ if(Boost_FOUND)
 
     target_link_libraries(${PROJECT_NAME} ${Boost_LIBRARIES})
 endif()
+
+# cppcheck --enable=all  $< --language=c++ -I $(INC_DIR) --suppress=missingIncludeSystem --check-config
+# clang-tidy -checks=*  src/main.cpp -- -Iinclude
